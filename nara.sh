@@ -9,4 +9,4 @@ vmrun suspend $x
 done
 echo "[*] Nothing left to suspend."
 echo "NARA"
-shutdown now
+systemctl poweroff -i
