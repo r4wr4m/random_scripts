@@ -132,13 +132,9 @@ def remove_webms(links,path):
     print('[+] Erasing webms')
     for link in links:
         if os.path.isfile(path+link[2]):
-            cmd='del "{}{}"'.format(path,link[2])
-            print(cmd)
-            os.system(cmd)
+            os.remove(path+link[2]) 
         if os.path.isfile(path+link[0]):
-            cmd2='del "{}{}"'.format(path,link[0])
-            print(cmd2)
-            os.system(cmd2)
+            os.remove(path+link[0]) 
 
 #####################################
 links=[]
