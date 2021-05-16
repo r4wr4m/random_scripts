@@ -124,7 +124,7 @@ def convert_videos(links,path):
     print('[+] Converting videos')
     for link in links:
             if not os.path.isfile(path+link[4]):
-                cmd='{} -i "{}{}" -i "{}{}" -c copy "{}{}"'.format(ffmpeg_path,path,link[2],path,link[0],path,link[4])
+                cmd='{} -i "{}{}" -i "{}{}" -c copy -strict experimental "{}{}"'.format(ffmpeg_path,path,link[2],path,link[0],path,link[4])
                 print(cmd)
                 os.system(cmd)
 
