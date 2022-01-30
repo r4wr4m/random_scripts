@@ -7,7 +7,9 @@ for FileName in glob.glob("**/*.txt", recursive = True):
         newText=f.read()
         
     newText=newText.replace('Ä…','ą')
+    newText=newText.replace('Ä„','Ą')
     newText=newText.replace('Ä‡','ć')
+    newText=newText.replace('Ä†','Ć')
     newText=newText.replace('Ä™','ę')
     newText=newText.replace('Ä�','Ę')
     newText=newText.replace('Ĺ‚','ł')
