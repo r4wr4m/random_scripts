@@ -1,0 +1,1 @@
+powershell -command "Add-Type -memberDefinition '[DllImport(\"kernel32.dll\")] public static extern void SetThreadExecutionState(uint flags);' -Name screenholder -Namespace Win32;[Win32.screenholder]::SetThreadExecutionState(2147483651);cls;Write-Host 'SCREENHOLDER';Write-Host 'Press any key to exit...';$k =[System.Console]::ReadKey()"
