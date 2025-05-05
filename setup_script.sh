@@ -10,8 +10,10 @@ cp /etc/skel/.zshrc ~/
 
 apt update
 apt -y install terminator vim
+apt -y install remmina
+apt -y install joplin
 apt -y install glances #monitoring tool
-apt -y install brasero #4 burning cds
+#apt -y install brasero #4 burning cds
 
 git clone https://github.com/danielmiessler/SecLists.git /opt/SecLists
 git clone https://github.com/SecureAuthCorp/impacket.git /opt/impacket
