@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #UPDATE ~/.bash_history instantly
-echo 'PROMPT_COMMAND="history -a"' >> ~/.profile
+echo 'PROMPT_COMMAND="history -a"' >> /root/.profile
+echo 'PROMPT_COMMAND="history -a"' >> /home/user/.profile
 echo "[*] History set."
 
 #echo "[*] Changing shell..."
